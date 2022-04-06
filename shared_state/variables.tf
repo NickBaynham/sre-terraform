@@ -3,5 +3,6 @@ variable "aws_region" {
 }
 
 variable "clusters_name_prefix" {
+ default = "learning"
   type = string
 }
