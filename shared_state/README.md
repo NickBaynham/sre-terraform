@@ -12,6 +12,7 @@ export AWS_SECRET_ACCESS_KEY="asecretkey"
 export AWS_REGION="us-east-1"
 
 terraform plan
-terraform workspace new cluster1
+terraform workspace new nbaynham1
+export clusters_name_prefix="nbaynham1"
 terraform apply
 ```
