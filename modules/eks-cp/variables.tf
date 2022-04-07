@@ -1,4 +1,3 @@
-
 variable "cluster_full_name" {
   type = string
 }
