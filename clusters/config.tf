@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "nbaynhamclusters-terraform-state"
-    key            = "nbaynhamclusters.tfstate"
+    bucket         = "nbaynham-terraform-state"
+    key            = "nbaynham.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "nbaynhamclusters-terraform-state-lock-dynamodb"
+    dynamodb_table = "nbaynham-terraform-state-lock-dynamodb"
   }
   required_providers {
     aws = {
