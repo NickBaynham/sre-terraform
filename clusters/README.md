@@ -8,3 +8,11 @@ Provision the Cluster VPC and enter the following outputs into terraform.tfvars:
 - Public Subnet Ids
 
 Note: you might also create data resources to obtain these values with Terraform
+
+```
+cd ~/sre-terraform/clusters
+terraform init
+terraform workspace new prod1
+terraform plan
+terraform apply
+```
