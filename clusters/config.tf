@@ -8,10 +8,8 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.31.0"
     }
   }
-  required_version = "~> 0.14.5"
 }
 
 data "aws_ssm_parameter" "workers_ami_id" {
