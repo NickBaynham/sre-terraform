@@ -16,3 +16,14 @@ terraform workspace new nbaynham1
 export clusters_name_prefix="nbaynham1"
 terraform apply
 ```
+## Destroy Shared State
+```
+aws s3 rm s3://nbaynham-terraform_state --recursive
+aws s3 rm s3://nbaynham-vpc-terraform-state --recursive
+aws s3 rb s3://nbaynham-terraform-state --force
+aws s3 rb s3://nbaynham-vpc-terraform-state --force
+
+cd /root/sre-terraform/shared_state
+terraform destroy
+terraform init
+```
