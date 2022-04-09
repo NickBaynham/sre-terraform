@@ -11,3 +11,11 @@ module "eks" {
   cluster_version   = var.cluster_version
   common_tags       = var.common_tags
 }
+
+data "aws_eks_cluster" cluster {
+  name = module.eks.cluster_id
+}
+
+data "aws_eks_cluster_auth" "cluster" {
+  name = module.eks.cluster_id
+}
