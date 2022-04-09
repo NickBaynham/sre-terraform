@@ -23,7 +23,7 @@ region=$(terraform output aws_region)
 region=$(sed -e 's/^"//' -e 's/"$//' <<<"$region")
 name=$(terraform output cluster_full_name)
 name=$(sed -e 's/^"//' -e 's/"$//' <<<"$name")
-aws eks --region $region update-kubeconfig --name $(terraform output cluster_full_name)
+aws eks --region $region update-kubeconfig --name $name
 terraform output authconfig | kubectl -n kube-system create -f -
 kubectl get ns
 ```
