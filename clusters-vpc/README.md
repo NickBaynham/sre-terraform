@@ -12,3 +12,9 @@ terraform validate
 terraform plan
 terraform apply
 ```
+
+## Removing Resources
+```
+terraform destroy
+terraform init
+```
