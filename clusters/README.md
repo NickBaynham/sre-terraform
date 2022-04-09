@@ -19,7 +19,9 @@ terraform apply
 
 ## Configure kubeconfig from provisioned cluster:
 ```
-aws eks --region $(terraform output aws_region) update-kubeconfig --name $(terraform output cluster_full_name)
+region=$(terraform output aws_region)
+region=$(sed -e 's/^"//' -e 's/"$//' <<<"$region")
+aws eks --region $region update-kubeconfig --name $(terraform output cluster_full_name)
 terraform output authconfig | kubectl -n kube-system create -f -
 kubectl get ns
 ```
