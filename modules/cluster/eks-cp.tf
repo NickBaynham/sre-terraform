@@ -1,5 +1,5 @@
 module "eks" {
-  source            = "../eks-cp"
+  source            = "/root/sre-terraform/modules/cluster/eks-cp"
   cluster_name      = var.cluster_full_name
   cluster_version   = "1.22"
   subnets           = var.private_subnets
