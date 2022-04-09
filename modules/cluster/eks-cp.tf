@@ -1,6 +1,5 @@
 module "eks" {
   source            = "../eks-cp"
-  cluster_name      = var.cluster_full_name
   cluster_version   = "1.22"
   vpc_id            = var.vpc_id
     
