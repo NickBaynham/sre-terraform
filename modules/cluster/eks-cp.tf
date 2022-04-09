@@ -1,7 +1,8 @@
 module "eks" {
   source            = "../eks-cp"
   version           = "17.24.0"
-  cluster_name      = "var.cluster_full_name
+  cluster_name      = var.cluster_full_name
+  cluster_version   = "1.22"
   subnets           = var.private_subnets
   vpc_id            = var.vpc_id
     
