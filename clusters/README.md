@@ -19,6 +19,6 @@ terraform apply
 
 ## Configure kubeconfig from provisioned cluster:
 ```
-aws eks --region ($terraform output aws_region) update -
+aws eks --region $(terraform output aws_region) update -
 kubeconif --name $(terraform output cluster_full_name)
 ```
