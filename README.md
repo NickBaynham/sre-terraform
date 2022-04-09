@@ -6,3 +6,7 @@ references:
 Site Reliability Engineering - Terraform Repository (Learning Project)
 
 Infrastructure as Code - Create an EKS Cluster
+
+Provision the Shared State Storage: https://github.com/NickBaynham/sre-terraform/blob/main/shared_state/README.md
+Provision the Cluster VPC: https://github.com/NickBaynham/sre-terraform/blob/main/clusters-vpc/README.md
+Provision the Cluster: https://github.com/NickBaynham/sre-terraform/blob/main/clusters/README.md
