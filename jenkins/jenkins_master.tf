@@ -100,7 +100,7 @@ resource "aws_elb" "jenkins_elb" {
   cross_zone_load_balancing = true
   security_groups           = [aws_security_group.elb_jenkins_sg.id]
   instances                 = [aws_instance.jenkins_master.id]
-
+/*
   listener {
     instance_port      = 8080
     instance_protocol  = "http"
@@ -108,7 +108,7 @@ resource "aws_elb" "jenkins_elb" {
     lb_protocol        = "https"
     ssl_certificate_id = var.ssl_arn
   }
-
+*/
   listener {
     instance_port      = 8080
     instance_protocol  = "http"
