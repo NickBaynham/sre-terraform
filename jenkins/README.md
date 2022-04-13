@@ -5,6 +5,6 @@ Reference: https://github.com/mlabouardy/pipeline-as-code-with-jenkins/tree/mast
 ```
 region="us-east-1"
 shared_credentials_file="/root/.aws/config"
-aws_rofile="default"
+aws_profile="default"
 author="nbaynham"
 ```
