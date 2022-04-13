@@ -32,7 +32,7 @@ variable "availability_zones" {
   description = "List of Availability Zones"
   default     = [
     "us-east-1a",
-    "us-eat-1b"
+    "us-east-1b"
   ]
 }
 /*
