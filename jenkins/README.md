@@ -28,3 +28,9 @@ aws ec2 --output text --query 'Vpcs[*].{VpcId:VpcId,Name:Tags[?Key==`Name`].Valu
 ```
 aws ec2 describe-availability-zones
 ```
+## Example Connection
+```
+ ssh -L 4000:10.0.0.14:22 ec2-user@184.73.137.4
+ ssh ec2-user@localhost -p 4000
+ status jenkins.service
+```
