@@ -65,7 +65,7 @@ variable "jenkins_password" {
 variable "jenkins_credentials_id" {
   type = string
   description = "Jenkins workers SSH based credentials id"
-}
+}*/
 
 // Default values
 
@@ -103,4 +103,4 @@ variable "jenkins_worker_instance_type" {
   type = string
   description = "Jenkins worker EC2 instance type"
   default = "t2.medium"
-} */
+}
