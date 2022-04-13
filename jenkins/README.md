@@ -24,3 +24,7 @@ reference: https://gist.github.com/andytumelty/3651ef79fc00908b4d9f5f6bba05489a
 # display VPC ID, CIDR Block and Name
 aws ec2 --output text --query 'Vpcs[*].{VpcId:VpcId,Name:Tags[?Key==`Name`].Value|[0],CidrBlock:CidrBlock}' describe-vpcs
 ```
+# get a list of availability zones in your region
+```
+aws ec2 describe-availability-zones
+```
