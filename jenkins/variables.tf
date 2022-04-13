@@ -20,6 +20,7 @@ variable "author" {
   description = "Created by"
 }
 
+/*
 variable "availability_zones" {
   type        = list
   description = "List of Availability Zones"
@@ -102,4 +103,4 @@ variable "jenkins_worker_instance_type" {
   type = string
   description = "Jenkins worker EC2 instance type"
   default = "t2.medium"
-}
+} */
