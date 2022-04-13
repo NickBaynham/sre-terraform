@@ -35,12 +35,12 @@ variable "availability_zones" {
     "us-east-1b"
   ]
 }
-/*
+
 variable "public_key" {
   type = string
   description = "SSH public key path"
 }
-
+/*
 variable "hosted_zone_id" {
   type = string
   description = "Route53 hosted zone id"
