@@ -8,3 +8,12 @@ shared_credentials_file="/root/.aws/config"
 aws_profile="default"
 author="nbaynham"
 ```
+
+To manage Jenkins:
+```
+cd /root/sre-terraform/jenkins
+terraform init
+terraform validate
+terraform plan
+terraform apply
+```
