@@ -20,6 +20,12 @@ variable "author" {
   description = "Created by"
 }
 
+variable "cidr_block" {
+  type = string
+  description = "VPC CIDR block"
+  default     = "10.0.0.0/16"
+}
+
 /*
 variable "availability_zones" {
   type        = list
@@ -67,12 +73,6 @@ variable "vpc_name" {
   type = string
   description = "VPC name"
   default     = "management"
-}
-
-variable "cidr_block" {
-  type = string
-  description = "VPC CIDR block"
-  default     = "10.0.0.0/16"
 }
 
 variable "public_subnets_count" {
