@@ -30,6 +30,10 @@ variable "cidr_block" {
 variable "availability_zones" {
   type        = list
   description = "List of Availability Zones"
+  default     = [
+    "us-east-1a",
+    "us-eat-1b"
+  ]
 }
 /*
 variable "public_key" {
