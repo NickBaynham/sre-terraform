@@ -40,6 +40,12 @@ variable "public_key" {
   type = string
   description = "SSH public key path"
 }
+
+variable "ssl_arn" {
+  type = string
+  description = "ACM SSL ARN"
+}
+
 /*
 variable "hosted_zone_id" {
   type = string
@@ -49,11 +55,6 @@ variable "hosted_zone_id" {
 variable "domain_name" {
   type = string
   description = "Domain name"
-}
-
-variable "ssl_arn" {
-  type = string
-  description = "ACM SSL ARN"
 }
 
 variable "jenkins_username" {
