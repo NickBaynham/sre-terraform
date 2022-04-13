@@ -40,13 +40,13 @@ variable "public_key" {
   type = string
   description = "SSH public key path"
 }
-
+/*
 variable "ssl_arn" {
   type = string
   description = "ACM SSL ARN"
 }
 
-/*
+
 variable "hosted_zone_id" {
   type = string
   description = "Route53 hosted zone id"
